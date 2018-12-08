@@ -1,5 +1,8 @@
 #
-# $FreeBSD: head/en_US.ISO8859-1/articles/pgpkeys/Makefile 46901 2015-06-30 14:47:21Z wblock $
+# The FreeBSD Documentation Project
+# The FreeBSD Brazilian Portuguese Documentation Project
+#
+# $FreeBSD$
 #
 # Article: PGP Keys
 

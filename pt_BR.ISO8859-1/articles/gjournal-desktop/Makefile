@@ -1,18 +1,23 @@
 #
-# $FreeBSD: head/en_US.ISO8859-1/articles/gjournal-desktop/Makefile 39631 2012-10-01 09:53:01Z gabor $
+# The FreeBSD Documentation Project
+# The FreeBSD Brazilian Portuguese Documentation Project
 #
-# Article: Implementing UFS journaling on a desktop PC
+# $FreeBSD$
+#
+# Article: gjournal desktop
+
+MAINTAINER=ebrandi@FreeBSD.org
 
 DOC?= article
 
-FORMATS?= html
+FORMATS?= html html-split
+WITH_ARTICLE_TOC?= YES
 
-INSTALL_COMPRESSED?=gz
+INSTALL_COMPRESSED?= gz
 INSTALL_ONLY_COMPRESSED?=
 
 SRCS=	article.xml
-IMAGES_EN=	disklabel1.png
-IMAGES_EN+=	disklabel2.png
+
 URL_RELPREFIX?=	../../../..
 DOC_PREFIX?=	${.CURDIR}/../../..
 

@@ -1,4 +1,8 @@
-# $FreeBSD: head/en_US.ISO8859-1/articles/Makefile 51679 2018-05-20 23:11:23Z gordon $
+#
+# The FreeBSD Documentation Project
+# The FreeBSD Brazilian Portuguese Documentation Project
+#
+# $FreeBSD$
 
 SUBDIR =
 SUBDIR+= bsdl-gpl
@@ -36,8 +40,6 @@ SUBDIR+= serial-uart
 SUBDIR+= solid-state
 SUBDIR+= vinum
 SUBDIR+= vm-design
-
-# ROOT_SYMLINKS+= new-users
 
 DOC_PREFIX?= ${.CURDIR}/../..
 .include "${DOC_PREFIX}/share/mk/doc.project.mk"

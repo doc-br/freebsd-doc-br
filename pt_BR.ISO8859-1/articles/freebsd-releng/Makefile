@@ -1,21 +1,24 @@
 #
-# $FreeBSD: head/en_US.ISO8859-1/articles/freebsd-releng/Makefile 51066 2017-10-06 14:08:45Z wosch $
+# The FreeBSD Documentation Project
+# The FreeBSD Brazilian Portuguese Documentation Project
 #
-# Article: FreeBSD Release Engineering
+# $FreeBSD$
+#
+# Article: FreeBSD Releng
 
-DOC?=		article
+MAINTAINER=ebrandi@FreeBSD.org
 
-FORMATS?=	html html-split
+DOC?= article
 
-INSTALL_COMPRESSED?=gz
+FORMATS?= html html-split
+WITH_ARTICLE_TOC?= YES
+
+INSTALL_COMPRESSED?= gz
 INSTALL_ONLY_COMPRESSED?=
 
-SRCS=		article.xml
-
-CSS_SHEET_ADDITIONS=extra.css
+SRCS=	article.xml
 
 URL_RELPREFIX?=	../../../..
 DOC_PREFIX?=	${.CURDIR}/../../..
 
 .include "${DOC_PREFIX}/share/mk/doc.project.mk"
-

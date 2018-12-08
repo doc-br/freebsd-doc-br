@@ -1,21 +1,24 @@
 #
-# $FreeBSD: head/en_US.ISO8859-1/articles/vm-design/Makefile 39631 2012-10-01 09:53:01Z gabor $
+# The FreeBSD Documentation Project
+# The FreeBSD Brazilian Portuguese Documentation Project
 #
-# Article: Design elements of the FreeBSD VM system
+# $FreeBSD$
+#
+# Article: VM Design
+
+MAINTAINER=ebrandi@FreeBSD.org
 
 DOC?= article
 
-FORMATS?= html
+FORMATS?= html html-split
 WITH_ARTICLE_TOC?= YES
 
-INSTALL_COMPRESSED?=gz
+INSTALL_COMPRESSED?= gz
 INSTALL_ONLY_COMPRESSED?=
 
-SRCS=		article.xml
-IMAGES_EN=	fig1.eps
-IMAGES_EN+=	fig2.eps
-IMAGES_EN+=	fig3.eps
-IMAGES_EN+=	fig4.eps
+SRCS=	article.xml
 
-DOC_PREFIX?= ${.CURDIR}/../../..
+URL_RELPREFIX?=	../../../..
+DOC_PREFIX?=	${.CURDIR}/../../..
+
 .include "${DOC_PREFIX}/share/mk/doc.project.mk"

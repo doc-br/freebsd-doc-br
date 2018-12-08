@@ -1,8 +1,12 @@
 #
 # $FreeBSD$
 #
+# The FreeBSD Documentation Project
+# The FreeBSD Brazilian Portuguese Documentation Project
+#
+# Book: Dev Model
 
-MAINTAINER= des@FreeBSD.org
+MAINTAINER= ebrandi@FreeBSD.org
 
 DOC?= book
 

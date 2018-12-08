@@ -1,24 +1,22 @@
 #
-# $FreeBSD: head/en_US.ISO8859-1/articles/committers-guide/Makefile 51414 2018-02-11 19:52:22Z wblock $
+# The FreeBSD Documentation Project
+# The FreeBSD Brazilian Portuguese Documentation Project
 #
-# Article: The FreeBSD Committers Guide
+# $FreeBSD$
+#
+# Article: Commiters Guide
+
+MAINTAINER=ebrandi@FreeBSD.org
 
 DOC?= article
 
-FORMATS?= html
+FORMATS?= html html-split
 WITH_ARTICLE_TOC?= YES
 
 INSTALL_COMPRESSED?= gz
 INSTALL_ONLY_COMPRESSED?=
 
 SRCS=	article.xml
-
-IMAGES_LIB=	callouts/1.png
-IMAGES_LIB+=	callouts/2.png
-IMAGES_LIB+=	callouts/3.png
-IMAGES_LIB+=	callouts/4.png
-IMAGES_LIB+=	callouts/5.png
-IMAGES_LIB+=	callouts/6.png
 
 URL_RELPREFIX?=	../../../..
 DOC_PREFIX?=	${.CURDIR}/../../..

@@ -1,11 +1,13 @@
-#
-# $FreeBSD: head/en_US.ISO8859-1/articles/linux-users/Makefile 39631 2012-10-01 09:53:01Z gabor $
+# 
+# $FreeBSD$
 #
 # Article: FreeBSD Quickstart for Linux Users
 
+MAINTAINER=ebrandi@FreeBSD.org
+
 DOC?= article
 
-FORMATS?= html
+FORMATS?= html html-split
 WITH_ARTICLE_TOC?= YES
 
 INSTALL_COMPRESSED?= gz

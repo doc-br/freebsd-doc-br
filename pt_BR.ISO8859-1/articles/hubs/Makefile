@@ -1,11 +1,14 @@
 #
-# $FreeBSD: head/en_US.ISO8859-1/articles/hubs/Makefile 39631 2012-10-01 09:53:01Z gabor $
+# The FreeBSD Documentation Project
+# The FreeBSD Brazilian Portuguese Documentation Project
+#
+# $FreeBSD$
 #
 # Article: Mirroring FreeBSD
 
 DOC?= article
 
-FORMATS?= html
+FORMATS?=       html html-split
 WITH_ARTICLE_TOC?= YES
 
 INSTALL_COMPRESSED?=gz

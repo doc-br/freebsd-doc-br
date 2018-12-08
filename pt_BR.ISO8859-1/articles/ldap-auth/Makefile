@@ -1,13 +1,16 @@
 #
-# $FreeBSD: head/en_US.ISO8859-1/articles/ldap-auth/Makefile 39631 2012-10-01 09:53:01Z gabor $
+# The FreeBSD Documentation Project
+# The FreeBSD Brazilian Portuguese Documentation Project
 #
-# Article: LDAP Authentication
+# $FreeBSD$
+#
+# Article: LDAP Auth
 
-MAINTAINER= kurin@causa-sui.net
+MAINTAINER=ebrandi@FreeBSD.org
 
-DOC?=	article
+DOC?= article
 
-FORMATS?= html-split html
+FORMATS?= html html-split
 WITH_ARTICLE_TOC?= YES
 
 INSTALL_COMPRESSED?= gz

@@ -1,10 +1,12 @@
 #
+# The FreeBSD Documentation Project
+# The FreeBSD Brazilian Portuguese Documentation Project
+#
 # $FreeBSD$
 #
-# Build the FreeBSD Documentation Project Primer.
-#
 
-MAINTAINER=doc@FreeBSD.org
+MAINTAINER=ebrandi@FreeBSD.org
+
 
 DOC?= book
 

@@ -1,34 +1,24 @@
 #
-# $FreeBSD: head/en_US.ISO8859-1/articles/pam/Makefile 50940 2017-09-27 07:29:27Z wosch $
+# The FreeBSD Documentation Project
+# The FreeBSD Brazilian Portuguese Documentation Project
 #
-# Article: Pluggable Authentication Modules
+# $FreeBSD$
+#
+# Article: PAM
+
+MAINTAINER=ebrandi@FreeBSD.org
 
 DOC?= article
 
-FORMATS?= html
+FORMATS?= html html-split
 WITH_ARTICLE_TOC?= YES
-WITH_INLINE_LEGALNOTICE?= YES
 
-INSTALL_COMPRESSED?=gz
+INSTALL_COMPRESSED?= gz
 INSTALL_ONLY_COMPRESSED?=
-
-EXTRAS=		pam_app.c
-EXTRAS+=	pam_conv.c
-EXTRAS+=	pam_module.c
-CLEANFILES+=	${EXTRAS}
 
 SRCS=	article.xml
 
-index.html article.html: ${EXTRAS}
+URL_RELPREFIX?=	../../../..
+DOC_PREFIX?=	${.CURDIR}/../../..
 
-pam_app.c: su.c
-	sed -e '/^[\/ ]\*/d' ${.ALLSRC} >${.TARGET}
-
-pam_conv.c: converse.c
-	sed -e '/^[\/ ]\*/d' ${.ALLSRC} >${.TARGET}
-
-pam_module.c: pam_unix.c
-	sed -e '/^[\/ ]\*/d' ${.ALLSRC} >${.TARGET}
-
-DOC_PREFIX?= ${.CURDIR}/../../..
 .include "${DOC_PREFIX}/share/mk/doc.project.mk"

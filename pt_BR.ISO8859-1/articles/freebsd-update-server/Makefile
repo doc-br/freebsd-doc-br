@@ -1,10 +1,16 @@
-# $FreeBSD: head/en_US.ISO8859-1/articles/freebsd-update-server/Makefile 39631 2012-10-01 09:53:01Z gabor $
+#
+# The FreeBSD Documentation Project
+# The FreeBSD Brazilian Portuguese Documentation Project
+#
+# $FreeBSD$
+#
+# Original revision: r38826
 #
 # Article: FreeBSD Update Server
 
 DOC?= article
 
-FORMATS?= html
+FORMATS?= html html-split
 
 INSTALL_COMPRESSED?= gz
 INSTALL_ONLY_COMPRESSED?=

@@ -1,5 +1,7 @@
+# The FreeBSD Documentation Project
+# The FreeBSD Brazilian Portuguese Documentation Project
 #
-# $FreeBSD: head/en_US.ISO8859-1/articles/building-products/Makefile 39631 2012-10-01 09:53:01Z gabor $
+# $FreeBSD$
 #
 # Article: Building products using FreeBSD
 

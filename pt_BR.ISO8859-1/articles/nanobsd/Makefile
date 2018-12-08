@@ -1,21 +1,20 @@
 #
-# $FreeBSD: head/en_US.ISO8859-1/articles/nanobsd/Makefile 39631 2012-10-01 09:53:01Z gabor $
+# The FreeBSD Documentation Project
+# The FreeBSD Brazilian Portuguese Documentation Project
 #
-# Article: Introduction to NanoBSD
+# $FreeBSD$
+#
+# Article: NanoBSD
+
+MAINTAINER=ebrandi@FreeBSD.org
 
 DOC?= article
 
-FORMATS?= html
+FORMATS?= html html-split
 WITH_ARTICLE_TOC?= YES
 
 INSTALL_COMPRESSED?= gz
 INSTALL_ONLY_COMPRESSED?=
-
-# Images from the cross-document image library
-IMAGES_LIB=  callouts/1.png
-IMAGES_LIB+= callouts/2.png
-IMAGES_LIB+= callouts/3.png
-IMAGES_LIB+= callouts/4.png
 
 SRCS=	article.xml
 
