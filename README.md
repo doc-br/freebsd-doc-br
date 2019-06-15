@@ -1,2 +1,5 @@
 # freebsd-doc-br
-Documentação do FreeBSD traduzida para pt_BR
+
+Intermediate repository, things in here need to be committed upstream.
+
+We use it to build the complete set of articles/books with our translations.
